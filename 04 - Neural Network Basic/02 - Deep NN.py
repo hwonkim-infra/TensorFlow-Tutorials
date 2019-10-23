@@ -24,7 +24,7 @@ X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
 # 첫번째 가중치의 차원은 [특성, 히든 레이어의 뉴런갯수] -> [2, 10] 으로 정합니다.
-W1 = tf.Variable(tf.random_uniform([2, 10], -1., 1.))
+W1 = tf.Variable(tf.random_uniform([2, 10], -1., 1.))           #-1과 1 사이의 난수 20개 생성하여 2 x 10 변수에 할당
 # 두번째 가중치의 차원을 [첫번째 히든 레이어의 뉴런 갯수, 분류 갯수] -> [10, 3] 으로 정합니다.
 W2 = tf.Variable(tf.random_uniform([10, 3], -1., 1.))
 
